@@ -9,7 +9,19 @@ COPY --from=composer /usr/bin/composer /usr/bin/composer
 RUN docker-php-ext-install mysqli pdo_mysql
 
 # Install the mysql CLI client so the pre-deploy command can import the SQL dump
-RUN apt-get update && apt-get install -y --no-install-recommends default-mysql-client && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        libzip-dev \
+        libpng-dev \
+        libjpeg-dev \
+        libwebp-dev \
+        libfreetype6-dev \
+        libonig-dev \
+        libxml2-dev \
+        unzip \
+        git \
+        curl \
+        default-mysql-client \
+    && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
