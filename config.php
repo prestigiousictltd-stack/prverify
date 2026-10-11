@@ -27,8 +27,8 @@ define('PAYSTACK_CALLBACK_URL', APP_URL . '/payment_callback.php');
 
 // ─── RandaVerify API Config ────────────────────────────────────────
 define('RANDAVERIFY_BASE_URL', 'https://api.randaverify.com/v1');
-define('RANDAVERIFY_ADMIN_USER', getenv('RANDAVERIFY_ADMIN_USER') ?: '');
-define('RANDAVERIFY_ADMIN_PASS', getenv('RANDAVERIFY_ADMIN_PASS') ?: '');
+define('RANDAVERIFY_ADMIN_USER', getenv('RANDAVERIFY_ADMIN_USER') ?: 'prestigious-ict');
+define('RANDAVERIFY_ADMIN_PASS', getenv('RANDAVERIFY_ADMIN_PASS') ?: 'Prestigious01.verify');
 
 // ─── API Endpoints ─────────────────────────────────────────────────
 define('RANDAVERIFY_ENDPOINT_NIN',   '/verify-nin');
