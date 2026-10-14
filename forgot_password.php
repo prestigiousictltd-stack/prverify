@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Forgot Password | Murna Foundation</title>
+    <title>Forgot Password | Prestigious ICT</title>
     <style>
         * {
             margin: 0;
