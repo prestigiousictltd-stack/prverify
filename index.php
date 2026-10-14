@@ -576,7 +576,7 @@ $nigerian_states = [
             <div class="brand-logo">
                             <img 
                 src="company_logo.jpg" 
-                alt="Murna Logo"
+                alt="Company_logo"
                 style="
                     width:500px;
                     height:150px;
