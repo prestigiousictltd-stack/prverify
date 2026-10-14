@@ -804,7 +804,7 @@ $nigerian_states = [
         <div class="divider">Already have an account?</div>
         <a href="?page=login" style="display:block; text-align:center; color:var(--green-light); font-weight:600; font-size:15px; text-decoration:none;">Sign In &rarr;</a>
         <?php endif; ?>
-       <div class="auth-right">Contact us at example@gmail.com</div>
+       <div class="auth-right">Contact us at PrestigiousICT@gmail.com</div>
     </div>
 </div>
 
