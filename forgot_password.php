@@ -13,27 +13,40 @@
             box-sizing: border-box;
         }
 
-           :root {
-            --green: #00A651;
-            --green-light: #00C960;
-            --green-dark: #007A3D;
-            --blue: #002D62;
-            --blue-mid: #003f8a;
-            --black: #080f1a;
-            --black-soft: #0d1625;
-            --card: #0f1e38;
-            --card-light: #162840;
-            --border: rgba(255,255,255,0.07);
-            --text: #c8d8f0;
-            --text-muted: #6e88ab;
-            --white: #ffffff;
-        }
-        
+            :root {
+      /* Silver palette */
+      --silver: #C0C0C0;
+      --silver-light: #E8E8E8;
+      --silver-dark: #8A8A8A;
+      --silver-mid: #D4D4D4;
+      /* Dark blue palette */
+      --blue-deep: #0A1A2F;
+      --blue-dark: #112B4F;
+      --blue-mid: #1E3A5F;
+      --blue-soft: #2A4A6F;
+      --blue-new: rgba(53,38,101,0.18);
+      --cyan: #1f82b6;
+     
+      /* Neutrals */
+      --black: #0B0F14;
+      --black-soft: #141A22;
+      --card: #1A2432;
+      --card-light: #1F2B3C;
+      --border: rgba(192, 192, 192, 0.18);
+      --text: #0A1A2F;
+      --text-muted: #9AA8B9;
+      --white: #FFFFFF;
+      --input-bg: rgba(192, 192, 192, 0.06);
+      /* Accent (silver as primary) */
+      --accent: #C0C0C0;
+      --accent-light: #D9D9D9;
+      --accent-dark: #8A8A8A;
+}
        
         body {
             font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-           background: linear-gradient(135deg, #002D62 0%, #007A3D 100%);
-            min-height: 100vh;
+         background: linear-gradient(135deg, #D4D4D4 0%, #D4D4D4 100%);
+             min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -74,7 +87,7 @@
             font-size: 1.85rem;
             font-weight: 600;
             letter-spacing: -0.3px;
-            background: linear-gradient(125deg, #1b6b4c, #2c8f6b);
+            background: linear-gradient(125deg, #112B4F, #112B4F);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -98,7 +111,7 @@
             font-size: 0.95rem;
             color: #4a5b66;
             margin-bottom: 1.8rem;
-            border-left: 3px solid #2c8f6b;
+            border-left: 3px solid #112B4F;
             padding-left: 1rem;
             background: #f9fbfc;
             border-radius: 0 12px 12px 0;
@@ -128,7 +141,7 @@
         }
 
         .input-wrapper:focus-within {
-            border-color: #2c8f6b;
+            border-color: #112B4F;
             box-shadow: 0 0 0 3px rgba(44, 143, 107, 0.2);
             background: #ffffff;
         }
@@ -136,7 +149,7 @@
         .input-icon {
             margin-right: 0.75rem;
             font-size: 1.25rem;
-            color: #6c8b7a;
+            color: #112B4F;
         }
 
         input {
@@ -157,7 +170,7 @@
 
         /* Button */
         .btn-submit {
-            background: #1b6b4c;
+            background: #112B4F;
             color: white;
             border: none;
             width: 100%;
@@ -176,7 +189,7 @@
         }
 
         .btn-submit:hover {
-            background: #13563e;
+            background: #112B4F;
             transform: scale(1.01);
             box-shadow: 0 8px 18px rgba(27, 107, 76, 0.25);
         }
@@ -193,21 +206,21 @@
         }
 
         .back-link a {
-            color: #1b6b4c;
+            color: #112B4F;
             text-decoration: none;
             font-weight: 500;
-            border-bottom: 1px dotted #9bc9b6;
+            border-bottom: 1px dotted #112B4F;
         }
 
         .back-link a:hover {
-            color: #0e4a35;
+            color: #8a9db8;
             border-bottom-color: #0e4a35;
         }
 
         /* alert / message simulation (can be dynamic later) */
         .info-message {
             background: #eef4f0;
-            border-left: 4px solid #2c8f6b;
+            border-left: 4px solid #112B4F;
             padding: 0.8rem 1rem;
             border-radius: 16px;
             font-size: 0.85rem;
@@ -242,20 +255,20 @@
     <div class="reset-card">
         <div class="brand">
             <div class="brand-icon">  <img 
-                src="murna.jpg" 
+                src="company_logo.jpg" 
                 alt="Murna Logo"
                 style="
-                    width:150px;
+                    width:300px;
                     height:150px;
                     object-fit:cover;
                     border-radius:20px;
-                    padding:9px;
+                    padding:38px;
                     background:#fff;
                     box-shadow:0 2px 8px rgba(0,0,0,0.15);
-                    border:2px solid #00A651;
+                    border:2px solid #112B4F;
                 "
                 ></div>
-            <h1>Murna Foundation Verification</h1>
+            <h1>Prestigious ICT Verifier</h1>
            
         </div>
 
@@ -288,7 +301,7 @@
         </form>
     </div>
     <div class="footer-note">
-        Murna Foundation — secure password recovery
+        PRVerify — secure password recovery
     </div>
 </body>
 </html>
