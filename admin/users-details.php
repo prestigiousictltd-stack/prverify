@@ -137,7 +137,7 @@ $conn->close();
         
         
         </div>
-          <h5 class="text-white mt-2">Murna Foundation</h5>
+          <h5 class="text-white mt-2">PrestigiousICT@gmail.com</h5>
                     <small class="text-white-50">Admin Panel</small>
                 </div>
                 <nav class="nav flex-column">
