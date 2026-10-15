@@ -67,7 +67,7 @@ $host     = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $resetLink = $protocol . $host . '/reset_password.php?token=' . urlencode($token);
 
 // --- Compose and send via Resend --------------------------------------------
-$appName = 'Murna Foundation';
+$appName = 'Prestigious ICT Verifier';
 $htmlBody = sprintf(
     '<div style="font-family:Arial,Helvetica,sans-serif;max-width:520px;margin:auto;padding:24px;color:#0f172a;">'
     . '<h2 style="color:#1b6b4c;margin-bottom:8px;">Reset your %s password</h2>'
