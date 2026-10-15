@@ -388,3 +388,22 @@ function _doRandaApiCall($endpoint, $payload, $token) {
         'detail'    => $decoded['detail'] ?? $decoded['message'] ?? ('HTTP ' . $httpCode . ' from API.'),
     ];
 }
+function mask_nin(?string $nin, int $keep = 0, int $trail = 4): string
+{
+    $nin = preg_replace('/\D+/', '', (string) $nin); // digits only
+    $len = strlen($nin);
+
+    if ($len === 0) {
+        return '—';
+    }
+    if ($len <= $keep + $trail) {
+        // Too short to mask meaningfully — hide everything
+        return str_repeat('•', $len);
+    }
+
+    $middle = $len - $keep - $trail;
+
+    return substr($nin, 0, $keep)
+         . str_repeat('•', $middle)
+         . substr($nin, -$trail);
+}
