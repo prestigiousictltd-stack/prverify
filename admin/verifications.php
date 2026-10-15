@@ -197,7 +197,11 @@ $conn->close();
                                             <td><?php echo date('Y-m-d H:i:s', strtotime($log['created_at'])); ?></td>
                                             <td><?php echo htmlspecialchars($log['full_name'] ?? $log['org_name']); ?></td>
                                             <td><span class="badge bg-primary"><?php echo strtoupper($log['verification_type']); ?></span></td>
-                                            <td><?php echo htmlspecialchars(substr($log['query_input'], 0, 50)); ?></td>
+                                           <td>
+                                                <span title="NIN partially hidden for privacy">
+                                                    <?= htmlspecialchars(mask_nin($log['query_input'] ?? null, 3, 4), ENT_QUOTES, 'UTF-8') ?>
+                                                </span>
+                                            </td> 
                                             <td>₦<?php echo number_format($log['cost'], 2); ?></td>
                                             <td>
                                                 <span class="badge bg-<?php echo $log['status'] == 'success' ? 'success' : ($log['status'] == 'failed' ? 'danger' : 'warning'); ?>">
