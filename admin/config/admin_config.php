@@ -61,4 +61,35 @@ function getDBConnection() {
     }
     return $conn;
 }
+
+
+/**
+ * Mask a NIN for display. Accepts any string of digits; returns a masked
+ * version with the middle replaced by bullets.
+ *
+ * @param string|null $nin     The raw NIN (11 digits for Nigeria).
+ * @param int         $keep    How many leading digits to keep (0 = hide all).
+ * @param int         $trail   How many trailing digits to keep.
+ * @return string              Masked form, or '—' if empty.
+ */
+function mask_nin(?string $nin, int $keep = 0, int $trail = 4): string
+{
+    $nin = preg_replace('/\D+/', '', (string) $nin); // digits only
+    $len = strlen($nin);
+
+    if ($len === 0) {
+        return '—';
+    }
+    if ($len <= $keep + $trail) {
+        // Too short to mask meaningfully — hide everything
+        return str_repeat('•', $len);
+    }
+
+    $middle = $len - $keep - $trail;
+
+    return substr($nin, 0, $keep)
+         . str_repeat('•', $middle)
+         . substr($nin, -$trail);
+}
+
 ?>
