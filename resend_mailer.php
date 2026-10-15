@@ -14,7 +14,7 @@ class ResendMailer
     private string $fromAddress;
     private string $fromName;
 
-    public function __construct(string $apiKey, string $fromAddress, string $fromName = 'Murna Foundation')
+    public function __construct(string $apiKey, string $fromAddress, string $fromName = 'Prestigious ICT Verifier')
     {
         $this->apiKey      = $apiKey;
         $this->fromAddress = $fromAddress;
@@ -30,7 +30,7 @@ class ResendMailer
     {
         $apiKey = getenv('RESEND_API_KEY') ?: ($_ENV['RESEND_API_KEY'] ?? '');
         $from   = getenv('RESEND_FROM_EMAIL') ?: ($_ENV['RESEND_FROM_EMAIL'] ?? 'onboarding@resend.dev');
-        $name   = getenv('RESEND_FROM_NAME') ?: ($_ENV['RESEND_FROM_NAME'] ?? 'Murna Foundation');
+        $name   = getenv('RESEND_FROM_NAME') ?: ($_ENV['RESEND_FROM_NAME'] ?? 'Prestigious ICT Verifier');
 
         return new self($apiKey, $from, $name);
     }
