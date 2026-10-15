@@ -84,7 +84,7 @@ function showError($message) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Reset Failed | Murna Foundation</title>
+        <title>Reset Failed | Prestigious ICT Verifier</title>
         <style>
             * { margin: 0; padding: 0; box-sizing: border-box; }
             body {
@@ -155,7 +155,7 @@ function showSuccess($message) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Password Reset | Murna Foundation</title>
+        <title>Password Reset | Prestigious ICT Verifier</title>
         <style>
             * { margin: 0; padding: 0; box-sizing: border-box; }
             body {
@@ -192,7 +192,7 @@ function showSuccess($message) {
             }
             .btn {
                 display: inline-block;
-                background: #1b6b4c;
+                background: #1F82B6;
                 color: white;
                 padding: 0.75rem 1.8rem;
                 border-radius: 40px;
