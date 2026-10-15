@@ -913,7 +913,7 @@ $balance = floatval($user['balance']);
                 <?php foreach ($verifications as $v): ?>
                 <tr>
                     <td><?= ucfirst($v['verification_type']) ?></td>
-                    <td style="font-family:monospace; font-size:13px;"><?= htmlspecialchars(substr($v['query_input'], 0, 30)) ?>...</td>
+                    <td style="font-family:monospace; font-size:13px;"><?= htmlspecialchars(substr(mask_nin_in_text($v['query_input'] ?? null), 0, 30), ENT_QUOTES, 'UTF-8') ?></td>
                     <td>NGN <?= number_format($v['cost'], 2) ?></td>
                     <td><span class="badge badge-<?= $v['status'] === 'success' ? 'success' : 'failed' ?>"><?= strtoupper($v['status']) ?></span></td>
                     <td style="font-size:12px; color:var(--text-muted);"><?= date('d M Y H:i', strtotime($v['created_at'])) ?></td>
