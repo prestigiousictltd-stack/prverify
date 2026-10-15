@@ -199,7 +199,7 @@ $conn->close();
                                             <td><span class="badge bg-primary"><?php echo strtoupper($log['verification_type']); ?></span></td>
                                            <td>
                                                 <span title="NIN partially hidden for privacy">
-                                                    <?= htmlspecialchars(mask_nin($log['query_input'] ?? null, 3, 4), ENT_QUOTES, 'UTF-8') ?>
+                                                    <?= htmlspecialchars(mask_nin($log['query_input'] ?? null), ENT_QUOTES, 'UTF-8') ?>
                                                 </span>
                                             </td> 
                                             <td>₦<?php echo number_format($log['cost'], 2); ?></td>
