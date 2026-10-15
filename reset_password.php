@@ -34,7 +34,7 @@ if (isset($_GET['token'])) {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-            <title>Reset Password | Murna Foundation</title>
+            <title>Reset Password | Prestigious ICT Verifier</title>
             <style>
                 * {
                     margin: 0;
@@ -188,7 +188,7 @@ if (isset($_GET['token'])) {
                 }
 
                 .btn-submit {
-                    background: #1b6b4c;
+                    background: #1F82B6;
                     color: white;
                     border: none;
                     width: 100%;
@@ -272,8 +272,8 @@ if (isset($_GET['token'])) {
                     border:2px solid #00A651;
                 "
                 ></div>
-                    <h1>Murna Foundation</h1>
-                    <div class="sub">restoring hope · empowering communities</div>
+                    <h1>Prestigious ICT Verifier</h1>
+                    <div class="sub">Get verified securedly</div>
                 </div>
 
                 <div class="form-title">Create new password</div>
@@ -311,7 +311,7 @@ if (isset($_GET['token'])) {
                 </form>
             </div>
             <div class="footer-note">
-                Murna Foundation — secure password reset
+                Prestigious ICT — secure password reset
             </div>
 
             <script>
@@ -353,7 +353,7 @@ if (isset($_GET['token'])) {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Invalid Link | Murna Foundation</title>
+            <title>Invalid Link | Prestigious ICT Verifier</title>
             <style>
                 * { margin: 0; padding: 0; box-sizing: border-box; }
                 body {
@@ -407,7 +407,7 @@ if (isset($_GET['token'])) {
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Missing Token | Murna Foundation</title>
+        <title>Missing Token | Prestigious ICT Verifier</title>
         <style>
             * { margin: 0; padding: 0; box-sizing: border-box; }
             body {
