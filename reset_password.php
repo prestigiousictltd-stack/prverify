@@ -259,8 +259,8 @@ if (isset($_GET['token'])) {
             <div class="reset-card">
                 <div class="brand">
                     <div class="brand-icon">  <img 
-                src="murna.jpg" 
-                alt="Murna Logo"
+                src="company_logo.jpg" 
+                alt="Company Logo"
                 style="
                     width:150px;
                     height:150px;
