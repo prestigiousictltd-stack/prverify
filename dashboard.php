@@ -923,7 +923,7 @@ $balance = floatval($user['balance']);
         </table>
         <?php endif; ?>
     </div>
- <div class="auth-right">Contact us at example@gmail.com</div>
+ <div class="auth-right">Contact us at PrestigiousICT@gmail.com</div>
 </main>
 </body>
 </html>
