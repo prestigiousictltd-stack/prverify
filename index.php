@@ -805,6 +805,8 @@ $nigerian_states = [
         <a href="?page=login" style="display:block; text-align:center; color:var(--green-light); font-weight:600; font-size:15px; text-decoration:none;">Sign In &rarr;</a>
         <?php endif; ?>
        <div class="auth-right">Contact us at PrestigiousICT@gmail.com</div>
+       <div class="auth-right">08161508927, 09113278939</div>
+
     </div>
 </div>
 
